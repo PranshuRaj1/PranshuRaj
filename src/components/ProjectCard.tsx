@@ -9,7 +9,7 @@ interface IProjectCard {
   description: string;
   thumbnail: string | StaticImageData;
   githubLink: string;
-  demoLink?: string;
+  demoLink: string;
 }
 
 export default function ProjectCard({
@@ -45,14 +45,15 @@ export default function ProjectCard({
           />
         </CardItem>
         <div className="flex justify-between items-center mt-8">
-          <CardItem
-            translateZ={20}
-            as={Link}
-            href={demoLink || "#"}
+          <Link
+            href={demoLink ? demoLink : "#"}
+            target="_blank"
+            rel="noopener noreferrer"
             className="px-4 py-2 rounded-xl text-xs font-normal dark:text-white"
           >
             Try now →
-          </CardItem>
+          </Link>
+
           <CardItem
             translateZ={20}
             as="button"

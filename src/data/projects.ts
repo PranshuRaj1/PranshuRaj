@@ -18,7 +18,7 @@ const projects = [
       "Designed and implemented a custom shell in C for Linux using WSL, providing an interactive command-line interface. Technologies - C, WSL (Windows Subsystem for Linux)",
     thumbnail: shell,
     githubLink: "https://github.com/PranshuRaj1/CommandShell",
-    demoLink: "https://commandshell-demo.example.com", // Replace with actual demo link or remove if not applicable
+    demoLink: "https://github.com/PranshuRaj1/CommandShell", // Replace with actual demo link or remove if not applicable
   },
   {
     title: "SmartBank",
@@ -26,7 +26,7 @@ const projects = [
       "Implemented React Router DOM for seamless navigation between different pages within the application. Implements transaction property of database. Frontend - React, Tailwind, Backend - Nodejs, Express Database - MongoDb",
     thumbnail: Bank,
     githubLink: "https://github.com/PranshuRaj1/Bank",
-    demoLink: "https://smartbank-demo.example.com", // Replace with actual demo link
+    demoLink: "https://github.com/PranshuRaj1/Bank", // Replace with actual demo link
   },
   {
     title: "Eazze",
@@ -34,7 +34,7 @@ const projects = [
       "The 'eazze' npm package streamlines Next.js project setup with Tailwind CSS, offering easy integration of UI libraries like Chakra UI, Shadcn, and PrimeReact. It allows developers to create fully-configured projects with minimal commands, simplifying the entire process into a single command setup.",
     thumbnail: eazze,
     githubLink: "https://www.npmjs.com/package/eazze",
-    demoLink: "https://eazze-demo.example.com", // Replace with actual demo link
+    demoLink: "https://www.npmjs.com/package/eazze, // Replace with actual demo link
   },
 ];
 
