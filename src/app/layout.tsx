@@ -33,6 +33,12 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
+      <head>
+        <meta
+          name="google-site-verification"
+          content="EKx-40vDiPGApU-paIAt4y3TM-lfPi48sMAXaLH396k"
+        />
+      </head>
       <body className={`${inter.className} flex flex-col min-h-[100%]`}>
         <ThemeProvider
           attribute="class"
