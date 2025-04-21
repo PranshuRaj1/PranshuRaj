@@ -1,6 +1,7 @@
 // app/page.tsx
 import type { Metadata } from "next";
 import Hero from "@/components/Hero";
+import JsonLd from "@/components/JsonLd";
 
 export const metadata: Metadata = {
   title: "Pranshu Raj - Web Developer Portfolio",
@@ -16,10 +17,28 @@ export const metadata: Metadata = {
   },
 };
 
+const personSchema = {
+  "@context": "https://schema.org",
+  "@type": "Person",
+  name: "Pranshu Raj",
+  url: "https://pranshuraj.vercel.app",
+  jobTitle: "Web Developer",
+  knowsAbout: ["Next.js", "React", "JavaScript", "Web Development"],
+  image: "https://pranshuraj.vercel.app/images/profile.jpg",
+  sameAs: [
+    "https://github.com/PranshuRaj1",
+    "https://leetcode.com/u/Rpranshu/",
+    "https://codeforces.com/profile/Rpranshu/",
+  ],
+};
+
 export default function Home() {
   return (
-    <div>
-      <Hero />
-    </div>
+    <>
+      <JsonLd data={personSchema} id="person-jsonld-home" />
+      <div>
+        <Hero />
+      </div>
+    </>
   );
 }
