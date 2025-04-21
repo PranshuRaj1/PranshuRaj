@@ -15,8 +15,15 @@ const inter = Raleway({
 
 export const metadata: Metadata = {
   title: "Pranshu Raj",
-  description:
-    "Pranshu Raj, Software Developer, Web Developer, Competitive Programmer",
+  description: `Pranshu Raj is a web developer specializing in Next.js, 
+    React, and modern JavaScript frameworks. 
+    View my projects and skills. Pranshu Raj is also a competitive programmer and has keen interest in Data Structure and Algorithm`,
+  keywords:
+    "Pranshu Raj, web developer, portfolio, Next.js, React, Leetcode, DSA",
+  openGraph: {
+    title: "Pranshu Raj - Portfolio",
+    description: "Web Developer specializing in Next.js and React",
+  },
 };
 
 export default function RootLayout({

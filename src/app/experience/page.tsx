@@ -1,6 +1,21 @@
 import { Box } from "@/components/ui/moving-border";
 import { experiences } from "@/data";
 import { TbPointFilled } from "react-icons/tb";
+import { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "About Pranshu Raj - Competitive Programmer & Engineer",
+  description:
+    "Learn about Pranshu Raj from New Delhi—VIT Bhopal grad, competitive programmer with Codeforces & LeetCode accolades, and Full-Stack expertise.",
+  keywords:
+    "Pranshu Raj, About, competitive programming, Codeforces, LeetCode, Full-Stack, VIT Bhopal, Skillset",
+  openGraph: {
+    title: "About Pranshu Raj - Engineer & Competitor",
+    description:
+      "Discover Pranshu Raj's journey: VIT Bhopal student, top Codeforces & LeetCode ranks, and Full-Stack projects.",
+    url: "https://pranshuraj.vercel.app/about",
+  },
+};
 
 const Experience = () => {
   return (
