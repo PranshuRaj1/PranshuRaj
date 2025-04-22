@@ -1,9 +1,0 @@
-# *
-User-agent: *
-Allow: /
-
-# Host
-Host: https://pranshuraj.vercel.app
-
-# Sitemaps
-Sitemap: https://pranshuraj.vercel.app/sitemap.xml
