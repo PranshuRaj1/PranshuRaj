@@ -5,7 +5,7 @@ import React from "react";
 const Resume = () => {
   const handleButtonClick = () => {
     window.open(
-      "https://drive.google.com/file/d/1SScGFJMX4pOA2FgWM98rplRbiuJtrwS_/view?usp=sharing",
+      "https://drive.google.com/file/d/1lZAXqJ6jaTUdsT4Q8kGdQEYn9_Yd8tBa/view?usp=sharing",
       "_blank"
     );
   };

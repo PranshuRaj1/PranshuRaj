@@ -2,8 +2,27 @@ import QuickGrab from "@/assets/projectImages/QuickGrab.png";
 import shell from "@/assets/projectImages/shell.png";
 import Bank from "@/assets/projectImages/Bank.webp";
 import eazze from "@/assets/projectImages/eazze.png";
+import quizVerse from "@/assets/projectImages/quizVerse.png";
 
 const projects = [
+
+  {
+    title: "QuizVerse",
+    description:
+      "Designed and developed a multi-party video call application, enabling real-time, low-latency interaction between concurrent users in a shared virtual session.",
+    thumbnail: quizVerse,
+    githubLink: "https://github.com/Dinesht04/Quiz-App-Frontend",
+    demoLink: "https://quizverse-sigma.vercel.app/",
+  },
+  
+  {
+    title: "Eazze",
+    description:
+      "The 'eazze' npm package streamlines Next.js project setup with Tailwind CSS, offering easy integration of UI libraries like Chakra UI, Shadcn, and PrimeReact. It allows developers to create fully-configured projects with minimal commands, simplifying the entire process into a single command setup.",
+    thumbnail: eazze,
+    githubLink: "https://www.npmjs.com/package/eazze",
+    demoLink: "https://www.npmjs.com/package/eazze",
+  },
   {
     title: "QuickGrab",
     description:
@@ -28,14 +47,7 @@ const projects = [
     githubLink: "https://github.com/PranshuRaj1/Bank",
     demoLink: "https://github.com/PranshuRaj1/Bank",
   },
-  {
-    title: "Eazze",
-    description:
-      "The 'eazze' npm package streamlines Next.js project setup with Tailwind CSS, offering easy integration of UI libraries like Chakra UI, Shadcn, and PrimeReact. It allows developers to create fully-configured projects with minimal commands, simplifying the entire process into a single command setup.",
-    thumbnail: eazze,
-    githubLink: "https://www.npmjs.com/package/eazze",
-    demoLink: "https://www.npmjs.com/package/eazze",
-  },
+  
 ];
 
 export default projects;

@@ -1,0 +1,22 @@
+<svg width="160" height="160" viewBox="0 0 160 160" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <!-- Leather texture pattern -->
+    <pattern id="leather" patternUnits="userSpaceOnUse" width="12" height="12">
+      <rect width="12" height="12" fill="#191919"/>
+      <path d="M0 0L12 12M12 0L0 12" stroke="#212121" stroke-width="2"/>
+    </pattern>
+    <radialGradient id="royalGlow" cx="50%" cy="50%" r="70%">
+      <stop offset="70%" stop-color="#fdf6e3"/>
+      <stop offset="90%" stop-color="#242424"/>
+      <stop offset="100%" stop-color="#111"/>
+    </radialGradient>
+  </defs>
+  <!-- Outer circle with gold border -->
+  <circle cx="80" cy="80" r="72" fill="url(#leather)" stroke="#d4af37" stroke-width="8"/>
+  <!-- Inner glow for royal effect -->
+  <circle cx="80" cy="80" r="62" fill="url(#royalGlow)" opacity=".25"/>
+  <!-- Hindi "प्र" initial centered -->
+  <text x="50%" y="56%" text-anchor="middle" fill="#ffd700" font-size="70" font-family="Noto Sans Devanagari, Arial" font-weight="bold" dominant-baseline="middle" style="text-shadow: 2px 6px 16px #000a;">
+    प्र
+  </text>
+</svg>
