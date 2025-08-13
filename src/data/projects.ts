@@ -9,7 +9,7 @@ const projects = [
   {
     title: "QuizVerse",
     description:
-      "Designed and developed a multi-party video call application, enabling real-time, low-latency interaction between concurrent users in a shared virtual session.",
+      "Engineered a full-stack, real-time quiz platform using Node.js and Next.js, architecting a WebSocket server to support live gameplay, chat, and score updates for up to 100 concurrent players per room.",
     thumbnail: quizVerse,
     githubLink: "https://github.com/Dinesht04/Quiz-App-Frontend",
     demoLink: "https://quizverse-sigma.vercel.app/",
@@ -18,7 +18,7 @@ const projects = [
   {
     title: "Eazze",
     description:
-      "The 'eazze' npm package streamlines Next.js project setup with Tailwind CSS, offering easy integration of UI libraries like Chakra UI, Shadcn, and PrimeReact. It allows developers to create fully-configured projects with minimal commands, simplifying the entire process into a single command setup.",
+      "The 'eazze' npm package streamlines Next.js project setup with Tailwind CSS, offering easy integration of UI libraries like Chakra UI, Shadcn, and PrimeReact.",
     thumbnail: eazze,
     githubLink: "https://www.npmjs.com/package/eazze",
     demoLink: "https://www.npmjs.com/package/eazze",
