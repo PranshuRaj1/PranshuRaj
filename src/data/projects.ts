@@ -20,7 +20,7 @@ const projects = [
     description:
       "The 'eazze' npm package streamlines Next.js project setup with Tailwind CSS, offering easy integration of UI libraries like Chakra UI, Shadcn, and PrimeReact.",
     thumbnail: eazze,
-    githubLink: "https://www.npmjs.com/package/eazze",
+    githubLink: "https://github.com/PranshuRaj1/automation",
     demoLink: "https://www.npmjs.com/package/eazze",
   },
   {
@@ -42,7 +42,7 @@ const projects = [
   {
     title: "SmartBank",
     description:
-      "Implemented React Router DOM for seamless navigation between different pages within the application. Implements transaction property of database. Frontend - React, Tailwind, Backend - Nodejs, Express Database - MongoDb",
+      "Implemented React Router DOM for seamless navigation between different pages within the application. ",
     thumbnail: Bank,
     githubLink: "https://github.com/PranshuRaj1/Bank",
     demoLink: "https://github.com/PranshuRaj1/Bank",
