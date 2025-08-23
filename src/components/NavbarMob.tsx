@@ -5,7 +5,9 @@ import { motion, AnimatePresence, MotionConfig } from "framer-motion";
 import Link from "next/link";
 import {
   GithubIcon,
-  InstagramIcon,
+  
+  LeetCodeIcon,
+  
   LinkedInIcon,
   TwitterIcon,
 } from "@/components/Icons";
@@ -156,29 +158,15 @@ const NavbarMob = ({ navItems }: { navItems: INavItem[] }) => {
                     <GithubIcon className="w-6" />
                   </motion.a>
                   <motion.a
-                    href="https://www.linkedin.com/in/pranshuraj/"
-                    target="_blank"
-                    whileHover={{ y: -6 }}
-                    whileTap={{ scale: 1 }}
-                  >
-                    <LinkedInIcon className="w-6" />
-                  </motion.a>
-                  <motion.a
-                    href="https://twitter.com/RajPranshu12"
-                    target="_blank"
-                    whileHover={{ y: -6 }}
-                    whileTap={{ scale: 1 }}
-                  >
-                    <TwitterIcon className="w-6" />
-                  </motion.a>
-                  <motion.a
-                    href="https://www.instagram.com/raj_pranshu12/"
-                    target="_blank"
-                    whileHover={{ y: -6 }}
-                    whileTap={{ scale: 1 }}
-                  >
-                    <InstagramIcon className="w-8 -mt-1" />
-                  </motion.a>
+                            href="https://leetcode.com/u/Rpranshu/"
+                            target="_blank"
+                            whileHover={{ y: -6 }}
+                            whileTap={{ scale: 1 }}
+                          >
+                            <LeetCodeIcon className="w-6" />
+                          </motion.a>
+                  
+                  
                 </motion.div>
               </motion.div>
             </MotionConfig>

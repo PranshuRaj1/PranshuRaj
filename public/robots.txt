@@ -2,8 +2,13 @@
 User-agent: *
 Allow: /
 
+# Googlebot
+User-agent: Googlebot
+Disallow: /no-google/
+
 # Host
-Host: https://pranshuraj.vercel.app
+Host: https://pranshuraj.info
 
 # Sitemaps
 Sitemap: https://pranshuraj.vercel.app/sitemap.xml
+Sitemap: https://pranshuraj.vercel.app/server-sitemap.xml

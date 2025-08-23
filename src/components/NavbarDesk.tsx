@@ -3,7 +3,7 @@
 import { CustomLink } from "@/components/ui/CustomNavLink";
 import {
   GithubIcon,
-  InstagramIcon,
+  LeetCodeIcon,
   LinkedInIcon,
   TwitterIcon,
 } from "@/components/Icons";
@@ -31,30 +31,16 @@ const NavbarDesk = ({ navItems }: { navItems: INavItem[] }) => {
         >
           <GithubIcon className="w-6" />
         </motion.a>
-        <motion.a
-          href="https://www.linkedin.com/in/pranshuraj/"
+         <motion.a
+          href="https://leetcode.com/u/Rpranshu/"
           target="_blank"
           whileHover={{ y: -6 }}
           whileTap={{ scale: 1 }}
         >
-          <LinkedInIcon className="w-6" />
+          <LeetCodeIcon className="w-6" />
         </motion.a>
-        <motion.a
-          href="https://twitter.com/RajPranshu12"
-          target="_blank"
-          whileHover={{ y: -6 }}
-          whileTap={{ scale: 1 }}
-        >
-          <TwitterIcon className="w-6" />
-        </motion.a>
-        <motion.a
-          href="https://www.instagram.com/raj_pranshu12/"
-          target="_blank"
-          whileHover={{ y: -6 }}
-          whileTap={{ scale: 1 }}
-        >
-          <InstagramIcon className="w-8" />
-        </motion.a>
+        
+        
       </nav>
     </div>
   );
