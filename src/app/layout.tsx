@@ -14,17 +14,47 @@ const inter = Raleway({
 });
 
 export const metadata: Metadata = {
-  title: "Pranshu Raj",
-  description: `Pranshu Raj is a web developer specializing in Next.js, 
-    React, and modern JavaScript frameworks. 
-    View my projects and skills. Pranshu Raj is also a competitive programmer and has keen interest in Data Structure and Algorithm`,
-  keywords:
-    "Pranshu Raj, web developer, portfolio, Next.js, React, Leetcode, DSA",
+  metadataBase: new URL('https://www.pranshuraj.info'),
+  title: {
+    default: 'Pranshu Raj | Software Developer',
+    template: '%s | Pranshu Raj',
+  },
+  description: 'Portfolio of Pranshu Raj, Software Developer skilled in Next.js, React, Node.js, MongoDB, and Competitive Programming.',
+  keywords: ["Pranshu Raj", "Software Developer", "Next.js", "React", "Node.js", "Portfolio", "VIT"],
+  verification: {
+    google: 'EKx-40vDiPGApU-paIAt4y3TM-lfPi48sMAXaLH396k',
+  },
   openGraph: {
-    title: "Pranshu Raj - Portfolio",
-    description: "Web Developer specializing in Next.js and React",
+    type: 'website',
+    url: 'https://www.pranshuraj.info',
+    title: 'Pranshu Raj | Software Developer',
+    description: 'Explore projects, achievements, and contact details.',
+    images: [{ url: '/pp.jpeg', width: 800, height: 600, alt: 'Pranshu Raj' }],
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'Pranshu Raj | Software Developer',
+    description: 'Explore projects, achievements, and contact details.',
+    images: '/pp.jpeg',
   },
 };
+
+const jsonLd = {
+  '@context': 'https://schema.org',
+  '@type': 'Person',
+  name: 'Pranshu Raj',
+  url: 'https://www.pranshuraj.info',
+  sameAs: [
+    'https://www.linkedin.com/in/pranshuraj/',
+    'https://github.com/PranshuRaj1',              
+    'https://x.com/RajPranshu12',                   
+  ],
+  jobTitle: 'Software Developer',
+  image: 'https://www.pranshuraj.info/pp.jpeg',
+  "alumniOf": "VIT Bhopal University",
+  "knowsAbout": ["Java", "Next.js", "React", "Node.js", "MongoDB", "Data Structures", "Algorithms", "Typescript", "JavaScript"],
+};
+
 
 export default function RootLayout({
   children,
@@ -32,14 +62,14 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
-      <head>
-        <meta
-          name="google-site-verification"
-          content="EKx-40vDiPGApU-paIAt4y3TM-lfPi48sMAXaLH396k"
+    <html lang="en" suppressHydrationWarning>
+      {/* The manual <head> tag is no longer needed */}
+      <body className={`${inter.className} flex flex-col min-h-screen`}>
+        {/* Add the JSON-LD script for SEO */}
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
         />
-      </head>
-      <body className={`${inter.className} flex flex-col min-h-[100%]`}>
         <ThemeProvider
           attribute="class"
           defaultTheme="dark"
@@ -48,7 +78,8 @@ export default function RootLayout({
         >
           <SpotlightPreview />
           <Navbar />
-          <div>{children}</div>
+          {/* Use a semantic <main> tag for the main content */}
+          <main className="flex-grow">{children}</main>
           <Footer />
           <BackgroundBeams />
         </ThemeProvider>

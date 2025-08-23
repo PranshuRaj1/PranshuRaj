@@ -1,15 +1,35 @@
+// next-sitemap.config.js
+
+/** @type {import('next-sitemap').IConfig} */
 module.exports = {
-  siteUrl: "https://pranshuraj.vercel.app",
+  // Your canonical site URL
+  siteUrl: "https://www.pranshuraj.info",
+
+  // Generate a robots.txt file
   generateRobotsTxt: true,
-  exclude: ["/api/*"],
+
+  // (Optional) Don't include these pages in the sitemap
+  exclude: [
+    "/api/*", // Exclude all API routes
+    "/server-sitemap.xml", // Exclude the server-sitemap from the index, as it's manually added below
+    // Add any other pages you want to exclude (e.g., '/admin', '/profile')
+  ],
+
+  // Customize the robots.txt file
   robotsTxtOptions: {
-    includeTxtOptions: {
-      includeNonIndexSitemaps: true,
-    },
+    // Define crawling policies for different bots
     policies: [
       { userAgent: "*", allow: "/" },
-      { userAgent: "Googlebot", disallow: "/no-google/" },
+      // Example: Disallow a specific bot from a directory
+      // { userAgent: "AhrefsBot", disallow: ["/"] },
+      // Example: Disallow Google from a specific directory
+      // { userAgent: "Googlebot", disallow: "/private/" },
     ],
-    additionalSitemaps: ["https://pranshuraj.vercel.app/server-sitemap.xml"],
+
+    // List all your sitemaps, especially if you have dynamic ones
+    additionalSitemaps: [
+      "https://www.pranshuraj.info/sitemap.xml", // Your static sitemap
+      "https://www.pranshuraj.info/server-sitemap.xml", // Your dynamic sitemap
+    ],
   },
 };
