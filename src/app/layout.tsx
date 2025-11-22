@@ -17,26 +17,58 @@ const inter = Raleway({
 export const metadata: Metadata = {
   metadataBase: new URL('https://www.pranshuraj.info'),
   title: {
-    default: 'Pranshu Raj | Software Developer',
+    default: 'Pranshu Raj | Software Developer & Creative Coder',
     template: '%s | Pranshu Raj',
   },
-  description: 'Portfolio of Pranshu Raj, Software Developer skilled in Next.js, React, Node.js, MongoDB, and Competitive Programming.',
-  keywords: ["Pranshu Raj", "Software Developer", "Next.js", "React", "Node.js", "Portfolio", "VIT"],
+  description: 'Pranshu Raj is a Software Developer specializing in Next.js, React, and modern web technologies. Explore his portfolio, projects, and creative coding experiments.',
+  keywords: [
+    "Pranshu Raj", 
+    "Pranshu", 
+    "Raj", 
+    "Software Developer", 
+    "Web Developer", 
+    "Next.js Developer", 
+    "React Developer", 
+    "Frontend Engineer", 
+    "Creative Developer", 
+    "Portfolio", 
+    "VIT Bhopal"
+  ],
+  authors: [{ name: 'Pranshu Raj', url: 'https://www.pranshuraj.info' }],
+  creator: 'Pranshu Raj',
+  publisher: 'Pranshu Raj',
+  alternates: {
+    canonical: '/',
+  },
   verification: {
     google: 'EKx-40vDiPGApU-paIAt4y3TM-lfPi48sMAXaLH396k',
   },
   openGraph: {
     type: 'website',
     url: 'https://www.pranshuraj.info',
-    title: 'Pranshu Raj | Software Developer',
-    description: 'Explore projects, achievements, and contact details.',
+    title: 'Pranshu Raj | Software Developer & Creative Coder',
+    description: 'Pranshu Raj is a Software Developer specializing in Next.js, React, and modern web technologies. Explore his portfolio, projects, and creative coding experiments.',
+    siteName: 'Pranshu Raj Portfolio',
     images: [{ url: '/pp.jpeg', width: 800, height: 600, alt: 'Pranshu Raj' }],
+    locale: 'en_US',
   },
   twitter: {
     card: 'summary_large_image',
     title: 'Pranshu Raj | Software Developer',
-    description: 'Explore projects, achievements, and contact details.',
+    description: 'Pranshu Raj is a Software Developer specializing in Next.js, React, and modern web technologies.',
+    creator: '@RajPranshu12',
     images: '/pp.jpeg',
+  },
+  robots: {
+    index: true,
+    follow: true,
+    googleBot: {
+      index: true,
+      follow: true,
+      'max-video-preview': -1,
+      'max-image-preview': 'large',
+      'max-snippet': -1,
+    },
   },
 };
 
@@ -44,6 +76,8 @@ const jsonLd = {
   '@context': 'https://schema.org',
   '@type': 'Person',
   name: 'Pranshu Raj',
+  givenName: 'Pranshu',
+  familyName: 'Raj',
   url: 'https://www.pranshuraj.info',
   sameAs: [
     'https://www.linkedin.com/in/pranshuraj/',
@@ -52,10 +86,17 @@ const jsonLd = {
   ],
   jobTitle: 'Software Developer',
   image: 'https://www.pranshuraj.info/pp.jpeg',
-  "alumniOf": "VIT Bhopal University",
-  "knowsAbout": ["Java", "Next.js", "React", "Node.js", "MongoDB", "Data Structures", "Algorithms", "Typescript", "JavaScript"],
+  description: 'Pranshu Raj is a Software Developer specializing in Next.js, React, and modern web technologies.',
+  alumniOf: {
+    '@type': 'CollegeOrUniversity',
+    name: 'VIT Bhopal University'
+  },
+  knowsAbout: ["Java", "Next.js", "React", "Node.js", "MongoDB", "Data Structures", "Algorithms", "TypeScript", "JavaScript", "Web Development", "Software Engineering"],
+  worksFor: {
+    '@type': 'Organization',
+    name: 'Freelance'
+  }
 };
-
 
 export default function RootLayout({
   children,
