@@ -2,13 +2,13 @@ import { Spotlight } from "@/components/ui/Spotlight";
 
 export default function SpotlightPreview() {
   return (
-    <div className="-z-50 fixed h-screen w-full rounded-md flex md:items-center md:justify-center bg-dark-color-1 antialiased bg-grid-white/[0.02] overflow-hidden">
+    <div className="-z-50 fixed h-screen w-full rounded-md flex md:items-center md:justify-center bg-[#000000] antialiased overflow-hidden">
       <Spotlight
         className="-top-40 -left-10 md:-left-32 md:-top-20 h-screen"
-        fill="purple"
+        fill="white"
       />
       <Spotlight className="h-[80vh] w-[50vw] top-10 left-full" fill="white" />
-      <Spotlight className="left-80 top-28 h-[80vh] w-[50vw]" fill="blue" />
+      <Spotlight className="left-80 top-28 h-[80vh] w-[50vw]" fill="#262626" />
     </div>
   );
 }

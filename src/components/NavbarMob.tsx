@@ -12,6 +12,7 @@ import {
   TwitterIcon,
 } from "@/components/Icons";
 
+
 interface INavItem {
   name: string;
   link: string;
@@ -25,7 +26,7 @@ const NavbarMob = ({ navItems }: { navItems: INavItem[] }) => {
   };
 
   return (
-    <div className="sticky top-0 inset-x-0 p-6 z-50">
+    <div className="sticky top-0 inset-x-0 p-6 z-50 bg-white/30 dark:bg-black/20 backdrop-blur-md border-b border-white/20 dark:border-white/10 transition-all duration-300">
       <div className="container mx-auto">
         <motion.button
           initial="hide"
@@ -163,10 +164,19 @@ const NavbarMob = ({ navItems }: { navItems: INavItem[] }) => {
                             whileHover={{ y: -6 }}
                             whileTap={{ scale: 1 }}
                           >
-                            <LeetCodeIcon className="w-6" />
+                            <LeetCodeIcon className="w-6 dark:text-white" />
                           </motion.a>
                   
-                  
+
+                  <motion.a
+                    href="/resume.pdf"
+                    download="Pranshu_Raj_Resume.pdf"
+                    whileHover={{ scale: 1.05 }}
+                    whileTap={{ scale: 0.95 }}
+                    className="px-4 py-2 text-sm font-medium text-white border border-white/20 rounded-md hover:bg-white/10 transition-all"
+                  >
+                    Resume
+                  </motion.a>
                 </motion.div>
               </motion.div>
             </MotionConfig>

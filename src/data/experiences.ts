@@ -1,16 +1,55 @@
 const experiences = [
   {
-    company: "Looking for an Opportunity",
-    role: "Good grasp of DSA and Development ",
+    company: "Full-Stack Development",
+    role: "Building Scalable Applications",
     work: [
-      "Full-Stack Development: Proficient in building scalable and responsive web applications using React, Node.js, and MongoDB. Experienced in managing state with Recoil and Redux Toolkit, and implementing secure user authentication with Auth0.",
-      "Problem-Solving & Algorithmic Skills: Strong proficiency in solving complex problems, evidenced by solving over 500 problems on LeetCode and 200 on CodeForces, with a deep understanding of data structures, algorithms, and space-time complexity optimizations.",
-      "Programming Languages & Frameworks: Expertise in Java, JavaScript, Python, TypeScript. Well-versed in modern frameworks like ReactJS, NextJS, and Flask, as well as responsive design with Tailwind CSS.",
-      "Software Development Tools: Extensive experience with development tools such as VS Code, PyCharm, and IntelliJ, and adept at version control using Git.",
-      "Team Leadership & Collaboration: Demonstrated leadership by leading a team to victory in the 2024 Firefox Expedition Programming Competition. Strong collaborative skills in both academic and competitive environments.",
+      "Built multiple full-stack applications using React, Next.js, Node.js, Prisma, Express, MongoDB, and MySQL, focusing on clean architecture, performance, and real-world usability.",
+      "Created a Payment Application (full stack) with user auth, real-time updates, and a structured backend — strengthened understanding of API design, modular components, and database modeling.",
     ],
-    joining_date: "March 2024",
-    ending_date: "June 2024",
+    joining_date: "",
+    ending_date: "",
+  },
+  {
+    company: "Open Source & Tools",
+    role: "Developer Tooling",
+    work: [
+      "Developed Eazze, an NPM package with 450+ weekly downloads, designed to streamline Next.js + Tailwind project setup and integrate UI libraries like Chakra UI, Shadcn, and PrimeReact.",
+      "Designed and implemented a custom command shell in C supporting UNIX commands and piping — gained hands-on experience with OS internals, process management, and low-level programming.",
+    ],
+    joining_date: "",
+    ending_date: "",
+  },
+  {
+    company: "AI & Innovation",
+    role: "Integrating LLMs",
+    work: [
+      "Developed QuickGrab, a React + Groq-powered tool using LLaMA-80B to provide instant, concise explanations of complex concepts — explored LLM integration, real-time API communication, and optimized rendering.",
+    ],
+    joining_date: "",
+    ending_date: "",
+  },
+  {
+    company: "Competitive Programming",
+    role: "Algorithmic Excellence",
+    work: [
+      "Strengthened algorithmic and problem-solving skills through competitive programming.",
+      "1000+ LeetCode questions, peak rating 1712, top 9% in Weekly Contest 401.",
+      "200+ CodeForces problems, max rating 1029.",
+      "First place in Firefox Expedition Programming Competition (2024) and top 20 in InnovateU Techathon.",
+    ],
+    joining_date: "",
+    ending_date: "",
+  },
+   {
+    company: "UI/UX & Deployment",
+    role: "Modern Web Technologies",
+    work: [
+      "Experienced with building responsive, accessible UIs using Tailwind, Material UI, Chakra UI, Shadcn, and component-driven design principles.",
+      "Comfortable setting up deployments and production workflows using platforms like Netlify and Vercel.",
+      "Currently exploring WebRTC, real-time communication patterns, and system performance tuning.",
+    ],
+    joining_date: "",
+    ending_date: "",
   },
 ];
 

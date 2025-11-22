@@ -7,6 +7,7 @@ import SpotlightPreview from "@/components/SpotlightPreview";
 import Footer from "@/components/Footer";
 import { BackgroundBeams } from "@/components/ui/background-beams";
 import Navbar from "@/components/Navbar";
+import SpaceBackground from "@/components/SpaceBackground";
 
 const inter = Raleway({
   subsets: ["latin"],
@@ -73,15 +74,16 @@ export default function RootLayout({
         <ThemeProvider
           attribute="class"
           defaultTheme="dark"
-          enableSystem
+          forcedTheme="dark"
           disableTransitionOnChange
         >
           <SpotlightPreview />
           <Navbar />
           {/* Use a semantic <main> tag for the main content */}
-          <main className="flex-grow">{children}</main>
+          <main className="flex-grow relative z-10">{children}</main>
           <Footer />
-          <BackgroundBeams />
+          <SpaceBackground />
+          <BackgroundBeams className="opacity-40" />
         </ThemeProvider>
         <Analytics />
       </body>

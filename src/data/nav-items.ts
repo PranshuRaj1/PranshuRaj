@@ -5,24 +5,21 @@ const navItems = [
   },
   {
     name: "About",
-    link: "/about",
+    link: "#about",
   },
   {
-    name: "Experience",
-    link: "/experience",
+    name: "Interests",
+    link: "#interests",
   },
   {
     name: "Projects",
-    link: "/projects",
+    link: "#projects",
   },
   {
     name: "Contact",
-    link: "/contact",
+    link: "#contact",
   },
-  {
-    name: "Resume",
-    link: "/resume",
-  },
+
 ];
 
 export default navItems;
