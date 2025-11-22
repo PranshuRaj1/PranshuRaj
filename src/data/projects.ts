@@ -1,10 +1,9 @@
-// file: /lib/projects.ts or /data/projects.ts
-
 import QuickGrab from "@/assets/projectImages/QuickGrab.png";
 import eazze from "@/assets/projectImages/eazze.png";
 import quizVerse from "@/assets/projectImages/quizVerse.png";
 import shell from "@/assets/projectImages/shell.png";
 import Bank from "@/assets/projectImages/Bank.webp";
+import connected from "@/assets/projectImages/connected.png";
 import { StaticImageData } from "next/image";
 
 
@@ -22,6 +21,17 @@ export type Project = {
 
 const projects: Project[] = [
   {
+    slug: "connected-video-call",
+    title: "Connected",
+    description: 
+      "A multi-party video call application enabling real-time, low-latency interaction using Mediasoup's SFU architecture for efficient media routing.",
+    tags: ["Next.js", "React", "Node.js", "WebSocket", "Redis", "Mediasoup", "Full Stack"],
+    thumbnail: connected,
+    githubLink: "https://github.com/PranshuRaj1/connected",
+    demoLink: "https://github.com/PranshuRaj1/connected", 
+    category: "Full Stack",
+  },
+  {
     slug: "quizverse",
     title: "QuizVerse",
     description:
@@ -37,7 +47,7 @@ const projects: Project[] = [
     title: "Eazze",
     description:
       "An npm package that automates and streamlines Next.js project setup with various UI libraries and Tailwind CSS.",
-    tags: ["NPM", "Node.js", "Automation", "CLI", "Developer Tool"],
+    tags: ["NPM",  "Automation", "CLI", "Developer Tool"],
     thumbnail: eazze,
     githubLink: "https://github.com/PranshuRaj1/automation",
     demoLink: "https://www.npmjs.com/package/eazze",
@@ -67,18 +77,17 @@ const projects: Project[] = [
     category: "CLI",
   },
   {
-  slug: "smartbank-react-app",
-  title: "SmartBank",
-  description: 
-    "A responsive frontend concept for a modern banking application, built to practice client-side routing and state management in React.",
-  tags: ["React", "React Router", "JavaScript", "Frontend", "UI/UX Concept"],
-  thumbnail: Bank,
-  githubLink: "https://github.com/PranshuRaj1/Bank",
-  // No live demo, so demoLink can be omitted or point to GitHub
-  demoLink: "https://github.com/PranshuRaj1/Bank", 
-  category: "Frontend",
-},
-  
+    slug: "smartbank-react-app",
+    title: "SmartBank",
+    description: 
+      "A responsive frontend concept for a modern banking application, built to practice client-side routing and state management in React.",
+    tags: ["React", "React Router", "JavaScript", "Frontend", "UI/UX Concept"],
+    thumbnail: Bank,
+    githubLink: "https://github.com/PranshuRaj1/Bank",
+    // No live demo, so demoLink can be omitted or point to GitHub
+    demoLink: "https://github.com/PranshuRaj1/Bank", 
+    category: "Frontend",
+  },
 ];
 
 export default projects;
