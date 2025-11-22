@@ -89,7 +89,7 @@ const Hero = () => {
         initial={{ opacity: 0, scale: 0.8, x: 50 }}
         animate={{ opacity: 1, scale: 1, x: 0 }}
         transition={{ delay: 0.5, duration: 1 }}
-        className="relative z-10 w-full lg:w-1/2 h-[40vh] lg:h-full flex items-center justify-center lg:justify-end pointer-events-none"
+        className="hidden lg:flex relative z-10 w-full lg:w-1/2 h-[40vh] lg:h-full items-center justify-center lg:justify-end pointer-events-none"
       >
         <div className="w-full h-full max-w-lg">
           <BSTAnimation />
