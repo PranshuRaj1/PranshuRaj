@@ -6,7 +6,7 @@ import experiences from "@/data/experiences";
 
 const Experience = () => {
   return (
-    <section id="interests" className="py-20 w-full">
+    <section id="experience" className="py-20 w-full">
       <div className="container mx-auto px-4 md:px-6">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
@@ -16,7 +16,7 @@ const Experience = () => {
           className="text-center mb-12"
         >
           <h2 className="text-3xl md:text-4xl font-bold mb-4 text-neutral-800 dark:text-neutral-100">
-            Interests
+            Skills & Experience
           </h2>
         </motion.div>
 

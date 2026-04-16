@@ -19,6 +19,8 @@ const Footer = () => {
         <motion.a
           href="https://www.linkedin.com/in/pranshuraj/"
           target="_blank"
+          rel="noopener noreferrer"
+          aria-label="Pranshu Raj on LinkedIn"
           whileHover={{ y: -6 }}
           whileTap={{ scale: 1 }}
         >
@@ -27,6 +29,8 @@ const Footer = () => {
         <motion.a
           href="https://x.com/RajPranshu12"
           target="_blank"
+          rel="noopener noreferrer"
+          aria-label="Pranshu Raj on Twitter"
           whileHover={{ y: -6 }}
           whileTap={{ scale: 1 }}
         >

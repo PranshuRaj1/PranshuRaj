@@ -12,7 +12,7 @@ export default function JsonLd({ data, id = "json-ld" }: JsonLdProps) {
     <Script
       id={id}
       type="application/ld+json"
-      strategy="afterInteractive"
+      strategy="beforeInteractive"
       dangerouslySetInnerHTML={{ __html: JSON.stringify(data) }}
     />
   );

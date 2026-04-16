@@ -38,7 +38,7 @@ const Projects = () => {
               <div className="relative h-48 w-full overflow-hidden">
                 <Image
                   src={project.thumbnail}
-                  alt={project.title}
+                  alt={`${project.title} — ${project.category} project by Pranshu Raj`}
                   fill
                   className="object-cover group-hover:scale-110 transition-transform duration-500"
                 />
@@ -58,6 +58,7 @@ const Projects = () => {
                       href={project.githubLink}
                       target="_blank"
                       rel="noopener noreferrer"
+                      aria-label={`View ${project.title} source on GitHub`}
                       className="text-neutral-600 dark:text-neutral-400 hover:text-black dark:hover:text-white"
                     >
                       <GithubIcon className="w-5 h-5" />

@@ -24,6 +24,11 @@ export const metadata: Metadata = {
   keywords: [
     "Pranshu Raj", 
     "Software Developer in Delhi",
+    "Software Developer in India",
+    "Freelance Developer India",
+    "Hire Next.js Developer",
+    "Next.js Freelancer",
+    "React Developer for Hire",
     "Full Stack Developer",
     "Next.js Developer",
     "React Developer",
@@ -51,7 +56,7 @@ export const metadata: Metadata = {
     title: 'Pranshu Raj — Full Stack Developer | Next.js & React',
     description: 'Full-stack developer with deep expertise in Next.js, React, TypeScript, and LLM integrations. I build end-to-end web products — from pixel-perfect UIs to real-time systems.',
     siteName: 'Pranshu Raj Portfolio',
-    images: [{ url: '/pp.jpeg', width: 800, height: 600, alt: 'Pranshu Raj' }],
+    images: [{ url: '/og-image.png', width: 1200, height: 630, alt: 'Pranshu Raj — Full Stack Developer | Next.js & React' }],
     locale: 'en_US',
   },
   twitter: {
@@ -59,7 +64,7 @@ export const metadata: Metadata = {
     title: 'Pranshu Raj — Full Stack Developer',
     description: 'Full-stack developer with deep expertise in Next.js, React, TypeScript, and LLM integrations. I build end-to-end web products.',
     creator: '@RajPranshu12',
-    images: '/pp.jpeg',
+    images: '/og-image.png',
   },
   robots: {
     index: true,
@@ -84,7 +89,9 @@ const jsonLd = {
   sameAs: [
     'https://www.linkedin.com/in/pranshuraj/',
     'https://github.com/PranshuRaj1',              
-    'https://x.com/RajPranshu12',                   
+    'https://x.com/RajPranshu12',
+    'https://leetcode.com/u/Rpranshu/',
+    'https://codeforces.com/profile/Rpranshu/',
   ],
   jobTitle: 'Software & Full Stack Developer',
   image: 'https://www.pranshuraj.info/pp.jpeg',
@@ -107,7 +114,10 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" suppressHydrationWarning>
-      {/* The manual <head> tag is no longer needed */}
+      <head>
+        <link rel="me" href="https://github.com/PranshuRaj1" />
+        <link rel="me" href="https://www.linkedin.com/in/pranshuraj/" />
+      </head>
       <body className={`${inter.className} flex flex-col min-h-screen`}>
         {/* Add the JSON-LD script for SEO */}
         <script

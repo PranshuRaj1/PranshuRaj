@@ -54,6 +54,7 @@ const Hero = () => {
             Building the <span className="text-black dark:text-white">Future</span>
           </motion.span>
           <motion.span className="block" variants={letterAnimation}>of the Web.</motion.span>
+          <span className="sr-only">Full Stack Developer, Software Engineer in Delhi</span>
         </motion.h1>
         
         <motion.div 

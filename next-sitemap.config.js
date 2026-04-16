@@ -12,6 +12,11 @@ module.exports = {
   exclude: [
     "/api/*", // Exclude all API routes
     "/server-sitemap.xml", // Exclude the server-sitemap from the index, as it's manually added below
+    "/*.svg",
+    "/*.png",
+    "/*.jpg",
+    "/*.jpeg",
+    "/*.webp",
     // Add any other pages you want to exclude (e.g., '/admin', '/profile')
   ],
 
@@ -29,7 +34,6 @@ module.exports = {
     // List all your sitemaps, especially if you have dynamic ones
     additionalSitemaps: [
       "https://www.pranshuraj.info/sitemap.xml", // Your static sitemap
-      "https://www.pranshuraj.info/server-sitemap.xml", // Your dynamic sitemap
     ],
   },
 };
