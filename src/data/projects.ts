@@ -5,6 +5,9 @@ import shell from "@/assets/projectImages/shell.png";
 import Bank from "@/assets/projectImages/Bank.webp";
 import connected from "@/assets/projectImages/connected.png";
 import { StaticImageData } from "next/image";
+import nextflow from "@/assets/projectImages/nextflow.png";
+import xeno from "@/assets/projectImages/xeno.png";
+import dodge from "@/assets/projectImages/dodge.png";
 
 
 // Define a type for cleaner code
@@ -20,6 +23,36 @@ export type Project = {
 };
 
 const projects: Project[] = [
+  {
+    slug: "nextflow-llm-workflow",
+    title: "NextFlow - LLM Workflow",
+    description: "A Krea.ai-inspired visual AI pipeline builder. Drag typed nodes onto a canvas, wire them together, and execute entire LLM workflows via Trigger.dev and Gemini.",
+    tags: ["Next.js", "React Flow", "Gemini API", "Trigger.dev", "Prisma", "Full Stack"],
+    thumbnail: nextflow,
+    githubLink: "https://nextflow-orcin.vercel.app/workflow",
+    demoLink: "https://nextflow-orcin.vercel.app/workflow",
+    category: "Full Stack",
+  },
+  {
+    slug: "xeno-shopify-analytics",
+    title: "Xeno",
+    description: "A multi-tenant Shopify analytics dashboard application using Next.js 16, Drizzle ORM, and PostgreSQL. Ingests data via GraphQL API and Webhooks.",
+    tags: ["Next.js", "PostgreSQL", "Drizzle ORM", "RabbitMQ", "Full Stack"],
+    thumbnail: xeno,
+    githubLink: "https://xeno-ecru.vercel.app/",
+    demoLink: "https://xeno-ecru.vercel.app/",
+    category: "Full Stack",
+  },
+  {
+    slug: "dodge-o2c-graph",
+    title: "Dodge (O2C Graph Intelligence)",
+    description: "A natural-language query interface over a Supply Chain Order-to-Cash graph database. Ask business questions in English, get SQL-backed answers, and visualize relationships.",
+    tags: ["Next.js", "Neon Postgres", "Groq LLM", "Graph Viz", "Full Stack"],
+    thumbnail: dodge,
+    githubLink: "https://dodge-drab.vercel.app/",
+    demoLink: "https://dodge-drab.vercel.app/",
+    category: "Full Stack",
+  },
   {
     slug: "connected-video-call",
     title: "Connected",

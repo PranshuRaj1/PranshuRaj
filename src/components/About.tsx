@@ -19,8 +19,7 @@ const About = () => {
           </h2>
           <div className="bg-white/30 dark:bg-black/20 backdrop-blur-md border border-white/20 dark:border-white/10 rounded-2xl p-8 shadow-xl">
             <p className="text-lg text-neutral-700 dark:text-neutral-300 leading-relaxed mb-6">
-              I am Pranshu Raj, a passionate Software Developer with a knack for building robust and scalable web applications. 
-              With expertise in Next.js, React, and Node.js, I love transforming complex problems into elegant solutions.
+              I am Pranshu Raj, a Full-stack developer with deep expertise in Next.js, React, TypeScript, and LLM integrations. I build end-to-end web products — from pixel-perfect UIs to real-time systems — with a focus on performance and developer experience.
             </p>
             <p className="text-lg text-neutral-700 dark:text-neutral-300 leading-relaxed">
               When I'm not coding, you can find me exploring the latest tech trends, solving competitive programming challenges, 

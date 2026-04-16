@@ -8,15 +8,15 @@ import Projects from "@/components/Projects";
 import Contact from "@/components/Contact";
 
 export const metadata: Metadata = {
-  title: "Pranshu Raj - Web Developer Portfolio",
+  title: "Pranshu Raj — Full Stack Developer | Next.js & React",
   description:
-    "Welcome to the portfolio of Pranshu Raj—Next.js & React specialist showcasing projects, skills, and competitive programming achievements.",
+    "Full-stack developer with deep expertise in Next.js, React, TypeScript, and LLM integrations. I build end-to-end web products — from pixel-perfect UIs to real-time systems.",
   keywords:
-    "Pranshu Raj, portfolio, web developer, Next.js, React, projects, skills, competitive programming",
+    "Pranshu Raj, Next.js developer, React developer, TypeScript, full-stack, software developer in delhi, backend engineer, frontend engineer, database, web developer, portfolio",
   openGraph: {
-    title: "Pranshu Raj - Web Developer Portfolio",
+    title: "Pranshu Raj — Full Stack Developer | Next.js & React",
     description:
-      "Showcasing Next.js & React projects, skills, and competitive programming milestones.",
+      "Full-stack developer with deep expertise in Next.js, React, TypeScript, and LLM integrations.",
     url: "https://pranshuraj.vercel.app",
   },
 };
@@ -26,8 +26,8 @@ const personSchema = {
   "@type": "Person",
   name: "Pranshu Raj",
   url: "https://pranshuraj.vercel.app",
-  jobTitle: "Web Developer",
-  knowsAbout: ["Next.js", "React", "JavaScript", "Web Development"],
+  jobTitle: "Software & Full Stack Developer",
+  knowsAbout: ["Next.js", "React", "JavaScript", "Web Development", "Backend Engineering", "Frontend Engineering", "Full Stack Development", "Databases"],
   image: "https://pranshuraj.vercel.app/images/profile.jpg",
   sameAs: [
     "https://github.com/PranshuRaj1",
