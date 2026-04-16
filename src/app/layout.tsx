@@ -117,6 +117,7 @@ export default function RootLayout({
       <head>
         <link rel="me" href="https://github.com/PranshuRaj1" />
         <link rel="me" href="https://www.linkedin.com/in/pranshuraj/" />
+        <link rel="me" href="https://x.com/RajPranshu12" />
       </head>
       <body className={`${inter.className} flex flex-col min-h-screen`}>
         {/* Add the JSON-LD script for SEO */}

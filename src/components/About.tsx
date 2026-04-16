@@ -18,14 +18,17 @@ const About = () => {
             About Me
           </h2>
           <div className="bg-white/30 dark:bg-black/20 backdrop-blur-md border border-white/20 dark:border-white/10 rounded-2xl p-8 shadow-xl text-left">
-            <h3 className="text-xl font-semibold mb-2 text-neutral-800 dark:text-neutral-100">Tech Stack</h3>
+            <h3 className="text-xl font-semibold mb-2 text-neutral-800 dark:text-neutral-100">Who I Am</h3>
             <p className="text-lg text-neutral-700 dark:text-neutral-300 leading-relaxed mb-6">
-              I am Pranshu Raj, a Full-stack developer with deep expertise in Next.js, React, TypeScript, and LLM integrations. I build end-to-end web products — from pixel-perfect UIs to real-time systems — with a focus on performance and developer experience.
+              I am Pranshu Raj, a Full Stack Developer and Software Engineer based in Delhi, India, with deep expertise in Next.js, React, TypeScript, and LLM integrations. I build end-to-end web products — from pixel-perfect UIs to real-time systems — with a focus on performance and developer experience.
+            </p>
+            <h3 className="text-xl font-semibold mb-2 mt-4 text-neutral-800 dark:text-neutral-100">Tech Stack</h3>
+            <p className="text-lg text-neutral-700 dark:text-neutral-300 leading-relaxed mb-6">
+              Next.js · React · TypeScript · Node.js · PostgreSQL · MongoDB · Prisma · Drizzle ORM · Tailwind CSS · WebSockets · Redis · Docker · Vercel
             </p>
             <h3 className="text-xl font-semibold mb-2 mt-4 text-neutral-800 dark:text-neutral-100">Beyond Code</h3>
             <p className="text-lg text-neutral-700 dark:text-neutral-300 leading-relaxed">
-              When I'm not coding, you can find me exploring the latest tech trends, solving competitive programming challenges, 
-              or gazing at the stars—drawing inspiration from the infinite possibilities of the universe.
+              When I&apos;m not building, you can find me solving competitive programming challenges (1000+ LeetCode, top 9% globally), exploring the latest AI trends, or drawing inspiration from the infinite possibilities of the universe.
             </p>
           </div>
         </motion.div>

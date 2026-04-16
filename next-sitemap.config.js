@@ -8,16 +8,15 @@ module.exports = {
   // Generate a robots.txt file
   generateRobotsTxt: true,
 
-  // (Optional) Don't include these pages in the sitemap
+  // Don't include these in the sitemap
   exclude: [
-    "/api/*", // Exclude all API routes
-    "/server-sitemap.xml", // Exclude the server-sitemap from the index, as it's manually added below
-    "/*.svg",
+    "/api/*",    // API routes
+    "/*.svg",    // SVG assets (prevents icon.svg appearing as a page)
     "/*.png",
     "/*.jpg",
     "/*.jpeg",
     "/*.webp",
-    // Add any other pages you want to exclude (e.g., '/admin', '/profile')
+    "/*.ico",
   ],
 
   // Customize the robots.txt file

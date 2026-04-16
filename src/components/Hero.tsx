@@ -54,7 +54,7 @@ const Hero = () => {
             Building the <span className="text-black dark:text-white">Future</span>
           </motion.span>
           <motion.span className="block" variants={letterAnimation}>of the Web.</motion.span>
-          <span className="sr-only">Full Stack Developer, Software Engineer in Delhi</span>
+          <span className="sr-only">Full Stack Developer specializing in Next.js, React, and TypeScript. Software Engineer available for hire in Delhi, India. Building modern web applications with Node.js, PostgreSQL, and LLM integrations.</span>
         </motion.h1>
         
         <motion.div 
