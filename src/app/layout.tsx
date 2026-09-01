@@ -1,6 +1,5 @@
 import { Analytics } from "@vercel/analytics/react";
 import type { Metadata } from "next";
-import { Raleway } from "next/font/google";
 import "./globals.css";
 import { ThemeProvider } from "next-themes";
 import SpotlightPreview from "@/components/SpotlightPreview";
@@ -8,63 +7,49 @@ import Footer from "@/components/Footer";
 import { BackgroundBeams } from "@/components/ui/background-beams";
 import Navbar from "@/components/Navbar";
 import SpaceBackground from "@/components/SpaceBackground";
-
-const inter = Raleway({
-  subsets: ["latin"],
-  variable: "--font-raleway",
-});
+import person from "@/data/person";
 
 export const metadata: Metadata = {
-  metadataBase: new URL('https://www.pranshuraj.info'),
+  metadataBase: new URL("https://pranshuraj.vercel.app"),
   title: {
-    default: 'Pranshu Raj — Full Stack Developer | Next.js & React',
-    template: '%s | Pranshu Raj',
+    default: "Pranshu Raj - Software Engineer & AI Engineer",
+    template: "%s | Pranshu Raj",
   },
-  description: 'Full-stack developer with deep expertise in Next.js, React, TypeScript, and LLM integrations. I build end-to-end web products — from pixel-perfect UIs to real-time systems.',
-  keywords: [
-    "Pranshu Raj", 
-    "Software Developer in Delhi",
-    "Software Developer in India",
-    "Freelance Developer India",
-    "Hire Next.js Developer",
-    "Next.js Freelancer",
-    "React Developer for Hire",
-    "Full Stack Developer",
-    "Next.js Developer",
-    "React Developer",
-    "TypeScript",
-    "Backend Engineer",
-    "Frontend Engineer",
-    "Database Management",
-    "Web Developer",
-    "Creative Developer", 
-    "Portfolio", 
-    "VIT Bhopal"
-  ],
-  authors: [{ name: 'Pranshu Raj', url: 'https://www.pranshuraj.info' }],
-  creator: 'Pranshu Raj',
-  publisher: 'Pranshu Raj',
+  description:
+    "Pranshu Raj is a software engineer building backend systems, AI developer tools, and production LLM applications, including Parakh, an AI GitHub PR reviewer.",
+  authors: [{ name: "Pranshu Raj", url: "https://pranshuraj.vercel.app" }],
+  creator: "Pranshu Raj",
+  publisher: "Pranshu Raj",
   alternates: {
-    canonical: '/',
+    canonical: "/",
   },
   verification: {
-    google: 'EKx-40vDiPGApU-paIAt4y3TM-lfPi48sMAXaLH396k',
+    google: "EKx-40vDiPGApU-paIAt4y3TM-lfPi48sMAXaLH396k",
   },
   openGraph: {
-    type: 'website',
-    url: 'https://www.pranshuraj.info',
-    title: 'Pranshu Raj — Full Stack Developer | Next.js & React',
-    description: 'Full-stack developer with deep expertise in Next.js, React, TypeScript, and LLM integrations. I build end-to-end web products — from pixel-perfect UIs to real-time systems.',
-    siteName: 'Pranshu Raj Portfolio',
-    images: [{ url: '/og-image.png', width: 1200, height: 630, alt: 'Pranshu Raj — Full Stack Developer | Next.js & React' }],
-    locale: 'en_US',
+    type: "website",
+    url: "https://pranshuraj.vercel.app",
+    title: "Pranshu Raj - Software Engineer & AI Engineer",
+    description:
+      "Software engineer building backend systems, AI developer tools, and production LLM applications.",
+    siteName: "Pranshu Raj Portfolio",
+    images: [
+      {
+        url: "/og-image.png",
+        width: 1200,
+        height: 630,
+        alt: "Pranshu Raj - Software Engineer",
+      },
+    ],
+    locale: "en_US",
   },
   twitter: {
-    card: 'summary_large_image',
-    title: 'Pranshu Raj — Full Stack Developer',
-    description: 'Full-stack developer with deep expertise in Next.js, React, TypeScript, and LLM integrations. I build end-to-end web products.',
-    creator: '@RajPranshu12',
-    images: '/og-image.png',
+    card: "summary_large_image",
+    title: "Pranshu Raj - Software Engineer & AI Engineer",
+    description:
+      "Software engineer building backend systems, AI developer tools, and production LLM applications.",
+    creator: "@RajPranshu12",
+    images: ["/og-image.png"],
   },
   robots: {
     index: true,
@@ -72,39 +57,20 @@ export const metadata: Metadata = {
     googleBot: {
       index: true,
       follow: true,
-      'max-video-preview': -1,
-      'max-image-preview': 'large',
-      'max-snippet': -1,
+      "max-video-preview": -1,
+      "max-image-preview": "large",
+      "max-snippet": -1,
     },
   },
 };
 
 const jsonLd = {
-  '@context': 'https://schema.org',
-  '@type': 'Person',
-  name: 'Pranshu Raj',
-  givenName: 'Pranshu',
-  familyName: 'Raj',
-  url: 'https://www.pranshuraj.info',
-  sameAs: [
-    'https://www.linkedin.com/in/pranshuraj/',
-    'https://github.com/PranshuRaj1',              
-    'https://x.com/RajPranshu12',
-    'https://leetcode.com/u/Rpranshu/',
-    'https://codeforces.com/profile/Rpranshu/',
-  ],
-  jobTitle: 'Software & Full Stack Developer',
-  image: 'https://www.pranshuraj.info/pp.jpeg',
-  description: 'Full-stack developer with deep expertise in Next.js, React, TypeScript, and LLM integrations. I build end-to-end web products — from pixel-perfect UIs to real-time systems.',
+  ...person,
+  image: "https://pranshuraj.vercel.app/pp.jpeg",
   alumniOf: {
-    '@type': 'CollegeOrUniversity',
-    name: 'VIT Bhopal University'
+    "@type": "CollegeOrUniversity",
+    name: "VIT",
   },
-  knowsAbout: ["Java", "Next.js", "React", "Node.js", "MongoDB", "Data Structures", "Algorithms", "TypeScript", "JavaScript", "Web Development", "Software Engineering", "Frontend", "Backend", "Databases", "Full Stack Developer"],
-  worksFor: {
-    '@type': 'Organization',
-    name: 'Freelance'
-  }
 };
 
 export default function RootLayout({
@@ -116,14 +82,13 @@ export default function RootLayout({
     <html lang="en" suppressHydrationWarning>
       <head>
         <link rel="me" href="https://github.com/PranshuRaj1" />
-        <link rel="me" href="https://www.linkedin.com/in/pranshuraj/" />
-        <link rel="me" href="https://x.com/RajPranshu12" />
       </head>
-      <body className={`${inter.className} flex flex-col min-h-screen`}>
-        {/* Add the JSON-LD script for SEO */}
+      <body className="flex min-h-screen flex-col">
         <script
           type="application/ld+json"
-          dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify(jsonLd).replace(/</g, "\\u003c"),
+          }}
         />
         <ThemeProvider
           attribute="class"
@@ -133,8 +98,7 @@ export default function RootLayout({
         >
           <SpotlightPreview />
           <Navbar />
-          {/* Use a semantic <main> tag for the main content */}
-          <main className="flex-grow relative z-10">{children}</main>
+          <main className="relative z-10 flex-grow">{children}</main>
           <Footer />
           <SpaceBackground />
           <BackgroundBeams className="opacity-40" />

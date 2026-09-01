@@ -13,7 +13,7 @@ export default function JsonLd({ data, id = "json-ld" }: JsonLdProps) {
       id={id}
       type="application/ld+json"
       strategy="beforeInteractive"
-      dangerouslySetInnerHTML={{ __html: JSON.stringify(data) }}
+      dangerouslySetInnerHTML={{ __html: JSON.stringify(data).replace(/</g, "\\u003c") }}
     />
   );
 }

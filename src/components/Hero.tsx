@@ -49,12 +49,10 @@ const Hero = () => {
           animate="show"
           className="text-5xl md:text-7xl font-bold text-neutral-900 dark:text-white leading-tight mb-8 tracking-tight"
         >
-          <motion.span className="block" variants={letterAnimation}>I'm Pranshu Raj,</motion.span>
+          <motion.span className="block" variants={letterAnimation}>Pranshu Raj</motion.span>
           <motion.span className="block text-neutral-500 dark:text-neutral-400" variants={letterAnimation}>
-            Building the <span className="text-black dark:text-white">Future</span>
+            Software Engineer building backend systems and AI developer tools.
           </motion.span>
-          <motion.span className="block" variants={letterAnimation}>of the Web.</motion.span>
-          <span className="sr-only">Full Stack Developer specializing in Next.js, React, and TypeScript. Software Engineer available for hire in Delhi, India. Building modern web applications with Node.js, PostgreSQL, and LLM integrations.</span>
         </motion.h1>
         
         <motion.div 
